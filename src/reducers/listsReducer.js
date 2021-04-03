@@ -3,7 +3,7 @@ const initialState = {
     loading: true
 }
 
-const listsReducer = (state, action) => {
+const listsReducer = (state=initialState, action) => {
     switch(action.type) {
         default: 
         return state;
