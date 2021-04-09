@@ -6,7 +6,9 @@ import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import listsReducer from './reducers/listsReducer';
+// import { rootReducer } from './reducers/rootReducer'
 
 const store = createStore(listsReducer, applyMiddleware(thunk))
 

@@ -23,6 +23,15 @@ const listsReducer = (state=initialState, action) => {
                 }
                 default:
                 return state;
+
+            case "DELETE_LIST":
+                return {
+                    ...state,
+                    lists: state.lists.filter(list => action.list.id !== list.id  )   
+                     
+            
+                }
+                
     }
 }
 

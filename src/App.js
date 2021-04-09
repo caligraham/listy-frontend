@@ -11,6 +11,9 @@ import About from './components/About';
 import Index from './components/Index'
 import ErrorPage from './components/Error';
 import Form from './components/Form';
+import Edit from './components/Edit';
+import Happy from './components/Happy'
+
 
 
 
@@ -36,6 +39,8 @@ return (
       <Route exact path="/about" component= { About } />
       <Route exact path="/lists" component={ Index } />
       <Route exact path="/lists/new" component={ Form } />
+      <Route exact path="/lists/${id}/edit" component={ Edit } />
+      <Route exact path="/happyplace" component={ Happy } />
       <Route component={ ErrorPage } />
     </Switch>
     <Footer />

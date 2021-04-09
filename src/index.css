@@ -1,4 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #e4eddb
+}
+
 body {
+  background-color: #dfb221;
+  font-size: 28px;
+  text-shadow: 4px 4px 4px rgb(129, 106, 28);
+  text-align: center;
+}
+
+.container { 
+  background-color: rgba(100%, 100%, 100%, .3);
+  border: 2px #83677B;
+  border-radius: 100px; 
+  }
+
+  .button-color
+  {
+    color: #000000
+  }
+
+.inputs 
+{
+  color: #000000
+}
+
+.happy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 450px;
+  width: 570px;
+  box-shadow: 4px 4px 10px gray;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +56,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*/
+
