@@ -9,10 +9,11 @@ const HappyAnimals = [Cat, Mouse, Quokka, Puppy, Sloth]
 
 class Happy extends Component {
     render() {
+        
         return (
 
             <div>
-             <img src={HappyAnimals[Math.floor(Math.random() * 5)]}/>
+             <img className="images" src={HappyAnimals[Math.floor(Math.random() * 5)]}/>
             </div>
         )
     }

@@ -8,10 +8,10 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
+import Edit from './components/Edit'
 import Index from './components/Index'
 import ErrorPage from './components/Error';
 import Form from './components/Form';
-import Edit from './components/Edit';
 import Happy from './components/Happy'
 
 

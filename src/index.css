@@ -19,25 +19,20 @@ body {
   border-radius: 100px; 
   }
 
-  .button-color
-  {
-    color: #000000
-  }
-
-.inputs 
-{
+.button-color {
   color: #000000
 }
 
-.happy {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 450px;
-  width: 570px;
-  box-shadow: 4px 4px 10px gray;
-  justify-content: center;
-  align-items: center;
+.inputs {
+  color: #000000
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 340px;
 }
 
 

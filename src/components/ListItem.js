@@ -26,5 +26,5 @@ class ListItem extends Component {
 
 }
 
-export default connect(null, { deleteList })(ListItem)
+export default connect(null, {deleteList})(ListItem)
 

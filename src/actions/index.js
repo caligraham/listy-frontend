@@ -26,8 +26,6 @@ export const addList = (list, history) => {
     }
 }
 
-
-
 export const deleteList = ( id, history ) => {
     return dispatch => {
 
