@@ -2,20 +2,20 @@
 
 * {
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  color: #e4eddb
+  font-family: 'New Tegomin', serif;
+  color: #0a0708
 }
 
 body {
-  background-color: #dfb221;
+  background-color: #ffe2e2;
   font-size: 28px;
-  text-shadow: 4px 4px 4px rgb(129, 106, 28);
+  text-shadow: 4px 4px 4px rgb(199, 97, 155);
   text-align: center;
 }
 
 .container { 
-  background-color: rgba(100%, 100%, 100%, .3);
-  border: 2px #83677B;
+  background-color: rgba(235, 108, 171, 0.685);
+  border: 2px #f7759a;
   border-radius: 100px; 
   }
 
@@ -28,6 +28,21 @@ body {
 }
 
 .images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 340px;
+}
+
+.content {
+  height: 104vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.welcome-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
