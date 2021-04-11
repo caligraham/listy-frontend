@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
+import Logo from './Images/Logo.png'
+import Image from 'material-ui-image';
+
+const background = Logo
 
 class Home extends Component {
     render() {
         return (
             <div className="App">
-            <h1>Welcome, Hola, Bonjour, World</h1>
+             <Image aspectRatio={(16/9)} src={background} />
             </div>
         )
     }
