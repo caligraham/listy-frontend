@@ -30,17 +30,29 @@ const Happy=() => {
    const classes = useStyles()
      
         return (
-            <Carousel autoPlay>
-            <div className={classes.pic}>
-            <Image
-            src={HappyAnimals[Math.floor(Math.random() * 5)]}
-            aspectRatio={(16/9)}
-            />
-            {/* <img className="images" src={HappyAnimals[Math.floor(Math.random() * 5)]}/> */}
-            </div>
+            <Carousel>
+            { HappyAnimals.map( ( item, i) => <Item key={i} item={item} /> )}
             </Carousel>
         )
     }
 
+  function Item () {
+      return (
+                <Image
+                src={HappyAnimals[Math.floor(Math.random() * 5)]}
+                aspectRatio={(16/9)}
+                />
+      )
+  }
+
 
 export default Happy
+
+
+//<div className={classes.pic}>
+{/* <Image
+src={HappyAnimals[Math.floor(Math.random() * 5)]}
+aspectRatio={(16/9)}
+/>
+{/* <img className="images" src={HappyAnimals[Math.floor(Math.random() * 5)]}/> */}
+//</div> */}
