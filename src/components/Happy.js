@@ -6,6 +6,8 @@ import Puppy from './Images/Puppy.jpeg'
 import Sloth from './Images/Sloth.jpeg'
 import Image from 'material-ui-image';
 import { makeStyles } from '@material-ui/core/styles';
+import Carousel from 'react-material-ui-carousel'
+import {Paper} from '@material-ui/core'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -21,14 +23,14 @@ const useStyles = makeStyles((theme) => ({
 
 const HappyAnimals = [Cat, Mouse, Quokka, Puppy, Sloth]
 
-
+// const [autoPlay, setAutoPlay] = useState(true);
 
 
 const Happy=() => {
    const classes = useStyles()
      
         return (
-
+            <Carousel autoPlay>
             <div className={classes.pic}>
             <Image
             src={HappyAnimals[Math.floor(Math.random() * 5)]}
@@ -36,6 +38,7 @@ const Happy=() => {
             />
             {/* <img className="images" src={HappyAnimals[Math.floor(Math.random() * 5)]}/> */}
             </div>
+            </Carousel>
         )
     }
 
