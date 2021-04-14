@@ -53,10 +53,3 @@ const Happy=() => {
 export default Happy
 
 
-//<div className={classes.pic}>
-{/* <Image
-src={HappyAnimals[Math.floor(Math.random() * 5)]}
-aspectRatio={(16/9)}
-/>
-{/* <img className="images" src={HappyAnimals[Math.floor(Math.random() * 5)]}/> */}
-//</div> */}
