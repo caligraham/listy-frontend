@@ -4,6 +4,10 @@ import Mouse from './Images/Mouse.jpeg'
 import Quokka from './Images/Quokka.jpeg'
 import Puppy from './Images/Puppy.jpeg'
 import Sloth from './Images/Sloth.jpeg'
+import Seal from './Images/Seal.jpeg'
+import Koala from './Images/Koala.jpeg'
+import Leo from './Images/Leo.jpeg'
+import Bear from './Images/Bear.jpeg'
 import Image from 'material-ui-image';
 import { makeStyles } from '@material-ui/core/styles';
 import Carousel from 'react-material-ui-carousel'
@@ -21,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   ));
 
 
-const HappyAnimals = [Cat, Mouse, Quokka, Puppy, Sloth]
+const HappyAnimals = [Cat, Mouse, Quokka, Puppy, Sloth, Seal, Koala, Leo, Bear]
 
 // const [autoPlay, setAutoPlay] = useState(true);
 
@@ -39,7 +43,7 @@ const Happy=() => {
   function Item () {
       return (
                 <Image
-                src={HappyAnimals[Math.floor(Math.random() * 5)]}
+                src={HappyAnimals[Math.floor(Math.random() * 9)]}
                 aspectRatio={(16/9)}
                 />
       )
