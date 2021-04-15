@@ -28,6 +28,8 @@ class Form extends Component {
     render() {
         return (
             <div>
+                <br></br>
+                <br></br>
                <h3>Create A New Item</h3>
                <form onSubmit= { this.handleSubmit }>
                    <div className="container">
@@ -46,6 +48,10 @@ class Form extends Component {
                    </div>
                    <input className="button-color" type="submit" value="Create List" />
                </form>
+               <br></br>
+               <br></br>
+               <br></br>
+               <br></br>
             </div>
         )
     }
