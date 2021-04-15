@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffe2e2;
+  background-color: #fbe4e5;
   font-size: 28px;
   text-shadow: 4px 4px 4px rgb(199, 97, 155);
   text-align: center;
@@ -51,7 +51,13 @@ body {
 }
 
 .footer {
-  font-size: 15px;
+  bottom: 0;
+  height: 2em;
+  left: 0;
+  position: fixed;
+  font-size: small;
+  width:100%
+  
 }
 
 .about {
