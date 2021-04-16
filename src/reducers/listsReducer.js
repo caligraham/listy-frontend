@@ -14,7 +14,7 @@ const listsReducer = (state=initialState, action) => {
                 return {
                     ...state,
                     loading: false,
-                    lists: action.lists
+                    lists: action.sortedDates
                 }
             case "ADD_LIST":
                 return {

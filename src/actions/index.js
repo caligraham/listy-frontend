@@ -3,7 +3,9 @@ export const getLists = () => {
         dispatch({ type: "LOADING"})
         fetch("http://localhost:3001/lists")
         .then(resp => resp.json())
-        .then(lists => dispatch({ type: "SET_LISTS", lists }))
+        .then(lists => {
+             const sortedDates = lists.sort((a, b) => new Date(a.due_date) - new Date(b.due_date)).reverse()
+            dispatch({ type: "SET_LISTS", sortedDates })})
     }
 }
 
@@ -44,3 +46,4 @@ export const deleteList = ( id, history ) => {
         })
     }
 }
+
