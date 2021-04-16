@@ -54,10 +54,9 @@ body {
   bottom: 0;
   height: 2em;
   left: 0;
-  position: fixed;
+  position: relative;
   font-size: small;
-  width:100%
-  
+  width:100%;
 }
 
 .about {
