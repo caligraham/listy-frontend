@@ -4,7 +4,7 @@ export const getLists = () => {
         fetch("http://localhost:3001/lists")
         .then(resp => resp.json())
         .then(lists => {
-             const sortedDates = lists.sort((a, b) => new Date(a.due_date) - new Date(b.due_date)).reverse()
+             const sortedDates = lists.sort((a, b) => new Date(a.due_date) - new Date(b.due_date))
             dispatch({ type: "SET_LISTS", sortedDates })})
     }
 }
