@@ -30,7 +30,7 @@ const HappyAnimals = [Cat, Mouse, Quokka, Puppy, Sloth, Seal, Koala, Leo, Bear]
 // const [autoPlay, setAutoPlay] = useState(true);
 
 
-const Happy=() => {
+const Happy = () => {
    const classes = useStyles()
      
         return (

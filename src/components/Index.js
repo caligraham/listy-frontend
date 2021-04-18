@@ -22,7 +22,6 @@ class Index extends Component {
             )
           }
         
-    //    this.props.lists && const lists = this.props.lists.map( (list, i) =>  <ListItem key={i} title={ list.title } due_date={ this.formatDate(list.due_date)} notes={ list.notes } id={ list.id } history={ this.props.history }/>)
        
         return (
             <div>
