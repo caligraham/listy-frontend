@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import ListItem from './ListItem';
-import {deleteList} from '../actions/index';
+
 
 
 

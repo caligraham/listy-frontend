@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addList } from '../actions'
+import { getLists } from '../actions';
 import { findRenderedComponentWithType } from 'react-dom/test-utils'
+
 
 class Form extends Component {
     state= {
@@ -21,6 +23,7 @@ class Form extends Component {
         e.preventDefault();
 
         this.props.addList(this.state, this.props.history);
+        this.props.getLists()
 
     }
 
@@ -57,4 +60,4 @@ class Form extends Component {
     }
 }
 
-export default connect(null, { addList })(Form)
+export default connect(null, { addList, getLists })(Form)
