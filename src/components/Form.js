@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { addList } from '../actions'
 import { getLists } from '../actions';
-import { findRenderedComponentWithType } from 'react-dom/test-utils'
+
 
 
 class Form extends Component {
@@ -61,3 +61,4 @@ class Form extends Component {
 }
 
 export default connect(null, { addList, getLists })(Form)
+ 

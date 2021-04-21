@@ -11,7 +11,7 @@ import Bear from './Images/Bear.jpeg'
 import Image from 'material-ui-image';
 import { makeStyles } from '@material-ui/core/styles';
 import Carousel from 'react-material-ui-carousel'
-import {Paper} from '@material-ui/core'
+
 
 
 const useStyles = makeStyles((theme) => ({
