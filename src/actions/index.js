@@ -10,8 +10,8 @@ export const getLists = () => {
 }
 
 export const addList = (list, history) => {
+    
     return dispatch => {
-        console.log(list)
         fetch('http://localhost:3001/lists', {
             method: "POST",
             headers: {
