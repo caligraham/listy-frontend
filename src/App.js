@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
@@ -52,3 +51,6 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps, { getLists })(App);
+// null could be placeholder for mapStateToProps if we didn't want to grab state, 1st argument is REQUIRED.
+
+
