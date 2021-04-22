@@ -19,17 +19,15 @@ const listsReducer = (state=initialState, action) => {
             case "ADD_LIST":
                 return {
                     ...state,
-                    lists: [...state.lists, action.list]
+                    lists: [...state.lists, action.list].sort((a, b) => new Date(a.due_date) - new Date(b.due_date))
                 }
-                default:
-                return state;
-
             case "DELETE_LIST":
                 return {
                     ...state,
                     lists: state.lists.filter(list => action.list.id !== list.id)   
                 }
-                
+                default:
+                return state;
     }
 }
 
