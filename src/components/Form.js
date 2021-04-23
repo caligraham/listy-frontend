@@ -21,7 +21,9 @@ class Form extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
+        console.log("a")
         this.props.addList(this.state, this.props.history);
+        console.log("b")
 
     }
 
