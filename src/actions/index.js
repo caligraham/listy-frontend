@@ -8,10 +8,10 @@ export const getLists = () => {
             dispatch({ type: "SET_LISTS", sortedDates })})
     }
 }
-
+// a, c, b, d
 export const addList = (list, history) => {
-    
     return dispatch => {
+        console.log("c")
         fetch('http://localhost:3001/lists', {
             method: "POST",
             headers: {
@@ -22,9 +22,11 @@ export const addList = (list, history) => {
         })
         .then(resp => resp.json())
         .then(list => {
+            console.log("d")
             dispatch({ type: "ADD_LIST", list })
             history.push("/lists")
         })
+        
     }
 }
 
