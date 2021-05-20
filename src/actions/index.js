@@ -1,7 +1,7 @@
 export const getLists = () => {
     return dispatch => {
         dispatch({ type: "LOADING"})
-        fetch("http://localhost:3001/lists")
+        fetch("https://listy-lister.herokuapp.com/lists")
         .then(resp => resp.json())
         .then(lists => {
              const sortedDates = lists.sort((a, b) => new Date(a.due_date) - new Date(b.due_date))
@@ -12,7 +12,7 @@ export const getLists = () => {
 export const addList = (list, history) => {
     return dispatch => {
         console.log("c")
-        fetch('http://localhost:3001/lists', {
+        fetch("https://listy-lister.herokuapp.com/lists", {
             method: "POST",
             headers: {
                 "Accept": "application/json",
@@ -33,7 +33,7 @@ export const addList = (list, history) => {
 export const deleteList = ( id, history ) => {
     return dispatch => {
 
-        fetch(`http://localhost:3001/lists/${id}`, {
+        fetch(`https://listy-lister.herokuapp.com/lists/${id}`, {
             method: "DELETE",
             headers: {
                 "Accept": "application/json",
